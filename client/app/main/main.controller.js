@@ -4,9 +4,9 @@ angular.module('techkidsApp')
     $scope.submitCompany = function () {
       var data = {
         "_id" : "575f8609abc5afa35b3dc7dm",
-        "company_name" : "Pornhub",
-        "job_title" : "Pornstar",
-        "job_description" : "Fuck all day"
+        "company_name" : "test",
+        "job_title" : "test",
+        "job_description" : "test"
       };
       $http.post('/api/connect/post-company', data).then(function (response){
         console.log('post company');

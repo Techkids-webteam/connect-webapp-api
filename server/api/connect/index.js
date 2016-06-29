@@ -17,9 +17,9 @@ router.get('/companyByName/:company_name', controller.getCompanyByName);
 router.post('/post-company', controller.postCompany);
 
 //delete
-router.post('/delete-company', controller.deleteCompany);
+router.post('/delete-company/:id', controller.deleteCompany);
 
 //edit
-router.post('/edit-company', controller.editCompany)
+router.post('/edit-company/:id', controller.editCompany)
 
 module.exports = router;
